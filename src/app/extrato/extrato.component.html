@@ -1,0 +1,14 @@
+<table>
+  <thead>
+    <th>Data</th>
+    <th>Valor</th>
+    <th>Destinatário</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let transferencia of transferencias">
+      <td>{{transferencias.data}}</td>
+      <td>{{transferencias.valor}}</td>
+      <td>{{transferencias.destinatario}}</td>
+    </tr>
+  </tbody>
+</table>
