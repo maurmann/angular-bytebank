@@ -13,7 +13,11 @@ export class AppComponent {
 
   transferir($event){
     console.log($event);
-    this.transferencias.push($event);
+
+    // O operador ... desmembra o objeto e suas propriedades, assim estamos passando por parametro cada uma das propriedades mais a data
+
+    const transferencia = {...$event, data: new Date()}
+    this.transferencias.push(transferencia);
   }
 
 
