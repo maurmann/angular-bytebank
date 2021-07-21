@@ -23,6 +23,24 @@
       "destinatario": "123",
       "data": "2021-07-21T23:01:07.384Z",
       "id": "7FH3KoI"
+    },
+    {
+      "valor": 607,
+      "destinatario": "559",
+      "data": "2021-07-21T23:29:11.943Z",
+      "id": "YxcK-A-"
+    },
+    {
+      "valor": 3500,
+      "destinatario": "recarga",
+      "data": "2021-07-21T23:35:39.862Z",
+      "id": "YMlofAk"
+    },
+    {
+      "valor": 700,
+      "destinatario": "aerografo",
+      "data": "2021-07-21T23:35:52.856Z",
+      "id": "J7xbj6l"
     }
   ]
 }

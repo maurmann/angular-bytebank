@@ -1,3 +1,4 @@
+import { AppRoutingModule } from './app.routing-module';
 import { BrowserModule } from '@angular/platform-browser';
 import { DEFAULT_CURRENCY_CODE, LOCALE_ID, NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
@@ -13,7 +14,7 @@ registerLocaleData(localePt, 'pt');
 
 @NgModule({
   declarations: [AppComponent, NovaTransferenciaComponent, ExtratoComponent],
-  imports: [BrowserModule, FormsModule , HttpClientModule  ],
+  imports: [BrowserModule, FormsModule , HttpClientModule , AppRoutingModule ],
 
   // Essa configuracao define o locale para portugues brazil, utiliza para formatação de numeros, datas e moeda
   providers: [

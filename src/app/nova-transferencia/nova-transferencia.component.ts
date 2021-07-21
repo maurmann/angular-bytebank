@@ -1,4 +1,6 @@
+import { routes } from './../app.routing-module';
 import { Component, EventEmitter, Output } from '@angular/core';
+import { Router } from '@angular/router';
 import { Transferencia } from 'src/models/transferencia.models';
 import { TransferenciaService } from '../services/transferencia.service';
 
@@ -13,7 +15,10 @@ export class NovaTransferenciaComponent {
   valor: number;
   destinatario: number;
 
-  constructor(private transferenciaService: TransferenciaService) {}
+  constructor(
+    private transferenciaService: TransferenciaService,
+    private router: Router
+  ) {}
 
   transferir() {
     const transferencia: Transferencia = {
@@ -25,8 +30,9 @@ export class NovaTransferenciaComponent {
       .adicionar(transferencia)
       .subscribe((resultado) => {
         console.log(resultado);
+        this.router.navigateByUrl('extrato');   // navigate permite alem da rota passar parametros para a rota
       });
-    this.limparCampos();
+
   }
 
   limparCampos() {
